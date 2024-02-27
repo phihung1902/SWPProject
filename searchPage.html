@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Page</title>
+    <link rel="stylesheet" href="styleSearch.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <img src="bannerSearchPage.png" alt="" />
+    </div>
+    <nav class="navbar">
+      <ul class="nav_list">
+        <li><a href="index.html">trang chủ</a></li>
+        <li><a href="#">giới thiệu</a></li>
+        <li><a href="#">nội quy</a></li>
+        <li><a href="#">dịch vụ</a></li>
+        <li><a href="#">bộ sưu tập</a></li>
+        <li><a href="#">tin tức</a></li>
+      </ul>
+    </nav>
+    <div class="search_detail">
+      <div class="banner_description">
+        <span class="search_description">tra cứu tài liệu trực tuyến</span>
+      </div>
+
+      <div class="section_search">
+        <form action="/searchBook" method="get"></form>
+        <div class="section_search_content">
+          <select name="options" id="slOptions">
+            <option value="0" selected="selected">All</option>
+            <option value="1">Title</option>
+            <option value="2">Author</option>
+            <option value="4">Publisher</option>
+            <option value="5">Keyword</option>
+            <option value="6">Subject</option>
+            <option value="7">ISBN</option>
+            <option value="8">Language</option>
+          </select>
+          <input
+            type="search"
+            id="txtSearch"
+            name="keyword"
+            size="80"
+            placeholder="Everything"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <span class="result_notification"> kết quả tìm kiếm </span>
+      <div class="result">
+        <div class="result_image">
+          <img src="minna1.png" alt="" />
+        </div>
+        <div class="result_details">
+          <a href="#">
+            <span id="title">Tiếng nhật cho mọi người - Sơ cấp 1</span>
+            <span id="id_book">mã sách:a12</span>
+            <span id="other_infomation">......</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

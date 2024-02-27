@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header_left">
+        <img src="Logo_FPT_Education.png" alt="" />
+      </div>
+      <div class="header_middle">
+        <h2>fpt library</h2>
+      </div>
+      <div class="header_right">
+        <i class="fa-regular fa-user"></i>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul class="nav_list">
+        <li><a href="index.html">trang chủ</a></li>
+        <li><a href="#">giới thiệu</a></li>
+        <li><a href="#">nội quy</a></li>
+        <li><a href="#">dịch vụ</a></li>
+        <li><a href="#">bộ sưu tập</a></li>
+        <li><a href="#">tin tức</a></li>
+      </ul>
+    </nav>
+    <div class="background_search">
+      <div class="section_detail">
+        <div class="section_search">
+          <form method="get" action="/searchBook">
+            <div class="section_search_content">
+              <select name="options" id="slOptions">
+                <option value="0" selected="selected">All</option>
+                <option value="1">Title</option>
+                <option value="2">Author</option>
+                <option value="4">Publisher</option>
+                <option value="5">Keyword</option>
+                <option value="6">Subject</option>
+                <option value="7">ISBN</option>
+                <option value="8">Language</option>
+              </select>
+            </div>
+            <input
+              type="search"
+              id="txtSearch"
+              name="keyword"
+              size="80"
+              placeholder="Everything"
+              autocomplete="off"
+            />
+            <input type="submit" id="btnSearch" value="search" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_left">
+        <i class="fa-solid fa-map"></i>
+        <span>Khu đô thị FPT City, Ngũ Hành Sơn, Đà Nẵng</span>
+      </div>
+      <div class="footer_middle">
+        <i class="fa-solid fa-phone"></i>
+        <span
+          ><a
+            href="https://www.google.com/search?q=fptuniversity+d%C3%A0+n%E1%BA%B5ng&sca_esv=8566fab27653d66d&sxsrf=ACQVn09FGFYG9tlL2yKzhyzOZp6PPwhR3w%3A1707069432197&ei=-M-_ZcfTC86pvr0Ptu-H8AQ&ved=0ahUKEwjHr_OYoZKEAxXOlK8BHbb3AU4Q4dUDCBA&uact=5&oq=fptuniversity+d%C3%A0+n%E1%BA%B5ng&gs_lp=Egxnd3Mtd2l6LXNlcnAiGGZwdHVuaXZlcnNpdHkgZMOgIG7hurVuZzIKECEYChigARjDBEiyRlC2DlikRHADeAGQAQCYAccBoAGrC6oBBDEuMTC4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIHECMYsAIYJ8ICAhAmwgIIECEYoAEYwwTiAwQYACBBiAYBkAYI&sclient=gws-wiz-serp"
+            >0236 7300 999</a
+          ></span
+        >
+      </div>
+      <div class="footer_right">
+        <i class="fa-solid fa-envelope"></i>
+        <span>fptuthuviendn@fpt.edu.vn</span>
+      </div>
+    </div>
+  </body>
+</html>
